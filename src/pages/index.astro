@@ -5,12 +5,14 @@ import { site, projects, services, sectors, url } from '../lib/data.js';
 // data pro klientský skript (filtry, pás, chat)
 const data = {
   site: { email: site.email, emptyText: site.emptyText, chat: site.chat },
+  idle: { ...(site.idle || {}), media: (site.idle?.media || []).map(m => url(m)) },
   services, sectors,
   projects: projects.map(p => ({
     slug: p.slug, title: p.title, tag: p.tag, label: p.label,
     services: p.services, sectors: p.sectors,
     href: url(`/projekty/${p.slug}/`),
-    card: { ...p.card, cover: url(p.card?.cover) },
+    card: { ...p.card, cover: url(p.card?.cover), hoverMedia: url(p.card?.hoverMedia) },
+    reel: (p.reel || []).map(m => url(m)),
   })),
   specials: (site.specialCards || []).map(c => ({ ...c, link: url(c.link) })),
 };
@@ -63,6 +65,12 @@ const data = {
     </footer>
     <div class="count" id="count"></div>
   </main>
+
+  <!-- spořič: po nečinnosti rychlé střihy přes všechny značky -->
+  <div class="idle" id="idle" aria-hidden="true">
+    <div class="idle-stage" id="idleStage"></div>
+    <div class="idle-text"><i></i><span>{site.idle?.text}</span><i></i></div>
+  </div>
 
   <script type="application/json" id="data" set:html={JSON.stringify(data)} />
   <script src="../scripts/home.js"></script>

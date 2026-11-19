@@ -60,13 +60,20 @@ collections:
         name: card
         widget: object
         fields:
-          - { name: cover, label: Obrázek karty (na výšku 3:4), widget: image, required: false, hint: "Bez obrázku se vykreslí typografická karta z barev a textu níže." }
+          - { name: cover, label: "Obrázek / GIF / video karty (na výšku 3:4)", widget: file, required: false, hint: "GIF, JPG, PNG nebo MP4/WebM (video je lehčí než GIF). Bez něj se vykreslí typografická karta z barev a textu níže." }
+          - { name: hoverMedia, label: "Animace při najetí myší (GIF / MP4)", widget: file, required: false, hint: "Rychlá animace, která přeskočí přes kartu při hoveru." }
           - { name: bg, label: Barva pozadí, widget: color, default: "#111111" }
           - { name: ink, label: Barva písma, widget: color, default: "#ffffff" }
           - { name: accent, label: Akcentová barva (stránka projektu), widget: color, default: "#ffffff" }
           - { name: eyebrow, label: Malý nadpis (nahoře na kartě), widget: string, required: false }
           - { name: bigText, label: Velký text karty (Enter = nový řádek), widget: text, required: false }
 
+      - label: "Záběry do spořiče (GIF / MP4)"
+        name: reel
+        widget: list
+        required: false
+        hint: "Rychlé záběry značky, které se střídají ve spořiči po nečinnosti. Když necháš prázdné, použije se animace a obrázek karty."
+        field: { name: media, label: Záběr, widget: file }
       - { name: heroLogo, label: Logo do úvodu stránky projektu, widget: image, required: false, hint: "Ideálně SVG/PNG s průhledností. Bez něj se ukáže název." }
       - { name: heroMedia, label: Hlavní fotka nebo video (celá šířka), widget: file, required: false }
       - { name: question, label: Otázka (velké písmo), widget: string, required: false }
@@ -164,6 +171,19 @@ collections:
           - { name: linkedin, label: LinkedIn URL, widget: string, required: false }
           - { name: footerText, label: Text v patičce, widget: string }
           - { name: emptyText, label: Text když filtr nic nenajde, widget: string }
+          - label: Spořič (po nečinnosti)
+            name: idle
+            widget: object
+            fields:
+              - { name: enabled, label: Zapnutý, widget: boolean, default: true }
+              - { name: seconds, label: "Spustit po (sekundách nečinnosti)", widget: number, value_type: int, default: 120 }
+              - { name: frameMs, label: "Délka jednoho střihu (ms)", widget: number, value_type: int, default: 240, hint: "Menší = rychlejší. DixonBaxi má zhruba 200–300 ms." }
+              - { name: text, label: Věta uprostřed, widget: string }
+              - label: Extra záběry (mimo projekty)
+                name: media
+                widget: list
+                required: false
+                field: { name: media, label: Záběr, widget: file }
           - label: Speciální karty v pásu
             name: specialCards
             widget: list

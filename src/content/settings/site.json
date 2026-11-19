@@ -56,5 +56,12 @@
         "answer": "Ahoj! Na co se chceš zeptat?"
       }
     ]
+  },
+  "idle": {
+    "enabled": true,
+    "seconds": 120,
+    "frameMs": 240,
+    "text": "Až budeš připravený.",
+    "media": []
   }
 }

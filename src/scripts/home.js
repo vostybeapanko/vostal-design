@@ -3,15 +3,22 @@ const $ = (id) => document.getElementById(id);
 const esc = (s = '') => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const track = $('track'), rail = $('rail');
 
+/* ---------------- média (gif / obrázek / video) ---------------- */
+const isVideo = (u = '') => /\.(mp4|webm|mov)(\?|$)/i.test(u);
+const mediaTag = (u, alt = '', lazy = true) => isVideo(u)
+  ? `<video src="${esc(u)}" muted loop playsinline autoplay preload="${lazy ? 'metadata' : 'auto'}"></video>`
+  : `<img src="${esc(u)}" alt="${esc(alt)}"${lazy ? ' loading="lazy"' : ''}>`;
+
 /* ---------------- karty ---------------- */
 const meta = (a, b) => `<div class="meta"><span>${esc(a) || '&nbsp;'}</span><span>${esc(b) || '&nbsp;'}</span></div>`;
 function cardHTML(x) {
   if (x.special) return `<div class="item">${meta(x.line1, x.line2)}<a class="card note" href="${esc(x.link)}"><div class="art"><div class="t">${esc(x.title)}</div><div class="d">${esc(x.text)}</div></div>${x.tag ? `<span class="pill">${esc(x.tag)}</span>` : ''}</a></div>`;
   const c = x.card || {};
   const art = c.cover
-    ? `<img src="${esc(c.cover)}" alt="${esc(x.title)}" loading="lazy">`
+    ? mediaTag(c.cover, x.title)
     : `<span class="sub">${esc(c.eyebrow)}</span><span class="big">${esc(c.bigText)}</span>`;
-  return `<div class="item">${meta(x.label, x.sectors.join(', '))}<a class="card" href="${esc(x.href)}" style="background:${esc(c.bg)};color:${esc(c.ink)}" aria-label="${esc(x.title)} — ${esc(x.label)}, ${esc(x.sectors.join(', '))}"><div class="art">${art}</div>${x.tag ? `<span class="pill">${esc(x.tag)}</span>` : ''}</a></div>`;
+  const hov = c.hoverMedia ? `<div class="hov">${mediaTag(c.hoverMedia, x.title)}</div>` : '';
+  return `<div class="item">${meta(x.label, x.sectors.join(', '))}<a class="card" href="${esc(x.href)}" style="background:${esc(c.bg)};color:${esc(c.ink)}" aria-label="${esc(x.title)} — ${esc(x.label)}, ${esc(x.sectors.join(', '))}"><div class="art">${art}</div>${hov}${x.tag ? `<span class="pill">${esc(x.tag)}</span>` : ''}</a></div>`;
 }
 
 /* všechno = projekty + speciální karty na svých pozicích */
@@ -150,6 +157,46 @@ $('ask').addEventListener('submit', e => {
   add('me', esc(t)); q.value = ''; send.disabled = true;
   setTimeout(() => add('bot', reply(t)), 420);
 });
+
+/* ---------------- spořič: po nečinnosti rychlé střihy přes všechny značky ---------------- */
+const IDLE = D.idle || {};
+const idleEl = $('idle'), stage = $('idleStage');
+const idleSec = Number(new URLSearchParams(location.search).get('idle')) || IDLE.seconds || 120;
+// snímky: reel projektu → hover médium → cover → typografická karta; + extra média z nastavení
+const frames = [];
+D.projects.forEach(p => {
+  const m = [...(p.reel || []), p.card.hoverMedia, p.card.cover].filter(Boolean);
+  if (m.length) m.forEach(u => frames.push({ u, bg: p.card.bg }));
+  else frames.push({ ty: p.card.bigText || p.title, bg: p.card.bg, ink: p.card.ink });
+});
+(IDLE.media || []).forEach(u => frames.push({ u, bg: '#000' }));
+// přednačtení obrázků, ať střihy neblikají
+frames.filter(f => f.u && !isVideo(f.u)).forEach(f => { const i = new Image(); i.src = f.u; });
+
+let idleTimer = 0, cutTimer = 0, lastFrame = -1, idleOn = false;
+function frameHTML(f) {
+  if (f.u) return `<div class="idle-frame" style="background:${esc(f.bg)}">${mediaTag(f.u, '', false)}</div>`;
+  const rot = (Math.random() * 16 - 8).toFixed(1), sc = (0.8 + Math.random() * 0.6).toFixed(2);
+  return `<div class="idle-frame" style="background:${esc(f.bg)};color:${esc(f.ink)}"><span class="ty" style="--rot:${rot}deg;--sc:${sc}">${esc(f.ty)}</span></div>`;
+}
+function cut() {
+  let i; do { i = Math.floor(Math.random() * frames.length); } while (frames.length > 1 && i === lastFrame);
+  lastFrame = i;
+  stage.innerHTML = frameHTML(frames[i]);
+  cutTimer = setTimeout(cut, (IDLE.frameMs || 240) * (0.7 + Math.random() * 0.6));
+}
+function startIdle() {
+  if (idleOn || document.body.classList.contains('is-case') || !frames.length) return;
+  idleOn = true; document.body.classList.add('idle-on'); idleEl.classList.add('on'); cut();
+}
+function stopIdle() {
+  if (idleOn) { idleOn = false; clearTimeout(cutTimer); idleEl.classList.remove('on'); document.body.classList.remove('idle-on'); setTimeout(() => { if (!idleOn) stage.innerHTML = ''; }, 400); }
+  clearTimeout(idleTimer);
+  if (IDLE.enabled !== false) idleTimer = setTimeout(startIdle, idleSec * 1000);
+}
+['pointermove', 'pointerdown', 'keydown', 'wheel', 'touchstart', 'scroll'].forEach(ev => addEventListener(ev, stopIdle, { passive: true }));
+document.addEventListener('visibilitychange', () => { if (document.hidden) stopIdle(); });
+stopIdle();
 
 /* start */
 build(true); syncButtons();
