@@ -1,0 +1,191 @@
+# Administrace webu — vostal.design/admin
+# Přihlášení: "Sign In with Token" + GitHub token (fine-grained, repo vostal-design, Contents: Read and write)
+backend:
+  name: github
+  repo: vostybeapanko/vostal-design
+  branch: main
+  commit_messages:
+    create: "Přidán {{collection}} „{{slug}}“"
+    update: "Upraven {{collection}} „{{slug}}“"
+    delete: "Smazán {{collection}} „{{slug}}“"
+
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  # ---------------- PROJEKTY ----------------
+  - name: projekty
+    label: Projekty
+    label_singular: Projekt
+    folder: src/content/projects
+    format: json
+    extension: json
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: title
+    summary: "{{title}} — {{sectors}}"
+    sortable_fields: [order, title]
+    fields:
+      - { name: title, label: Název klienta / projektu, widget: string }
+      - { name: published, label: Zobrazit na webu, widget: boolean, default: true }
+      - { name: order, label: Pořadí (menší = dřív), widget: number, value_type: int, default: 100 }
+      - { name: tag, label: Štítek na kartě (např. Nová práce), widget: string, required: false }
+
+      - label: Co jsem dělal
+        name: komplet
+        widget: boolean
+        default: false
+        hint: "Komplet = značka od A do Z. Automaticky zaškrtne všechny služby, takže projekt najde každý filtr služeb."
+      - label: Služby
+        name: services
+        widget: relation
+        collection: sluzby
+        search_fields: [name]
+        value_field: name
+        display_fields: [name]
+        multiple: true
+        required: false
+        hint: "Když je zapnutý Komplet, tohle se ignoruje."
+      - label: Obory
+        name: sectors
+        widget: relation
+        collection: obory
+        search_fields: [name]
+        value_field: name
+        display_fields: [name]
+        multiple: true
+
+      - label: Karta na úvodu
+        name: card
+        widget: object
+        fields:
+          - { name: cover, label: Obrázek karty (na výšku 3:4), widget: image, required: false, hint: "Bez obrázku se vykreslí typografická karta z barev a textu níže." }
+          - { name: bg, label: Barva pozadí, widget: color, default: "#111111" }
+          - { name: ink, label: Barva písma, widget: color, default: "#ffffff" }
+          - { name: accent, label: Akcentová barva (stránka projektu), widget: color, default: "#ffffff" }
+          - { name: eyebrow, label: Malý nadpis (nahoře na kartě), widget: string, required: false }
+          - { name: bigText, label: Velký text karty (Enter = nový řádek), widget: text, required: false }
+
+      - { name: heroLogo, label: Logo do úvodu stránky projektu, widget: image, required: false, hint: "Ideálně SVG/PNG s průhledností. Bez něj se ukáže název." }
+      - { name: heroMedia, label: Hlavní fotka nebo video (celá šířka), widget: file, required: false }
+      - { name: question, label: Otázka (velké písmo), widget: string, required: false }
+      - { name: answer, label: Odpověď (velké písmo, akcent), widget: string, required: false }
+      - { name: lede, label: Popis projektu, widget: text }
+      - { name: role, label: Moje role, widget: string, required: false }
+      - { name: link, label: Odkaz na projekt (volitelné), widget: string, required: false }
+      - label: Čísla
+        name: stats
+        widget: list
+        required: false
+        max: 4
+        summary: "{{value}} — {{label}}"
+        fields:
+          - { name: value, label: Číslo, widget: string }
+          - { name: label, label: Popisek, widget: string }
+      - label: Citát
+        name: quote
+        widget: object
+        required: false
+        fields:
+          - { name: title, label: Velká věta, widget: string, required: false }
+          - { name: text, label: Doplňující text, widget: text, required: false }
+      - label: Galerie
+        name: gallery
+        widget: list
+        required: false
+        summary: "{{size}} — {{image}}"
+        fields:
+          - { name: image, label: Obrázek nebo video, widget: file }
+          - label: Velikost
+            name: size
+            widget: select
+            default: half
+            options:
+              - { label: "Celá šířka", value: full }
+              - { label: "Polovina (4:5)", value: half }
+              - { label: "Třetina (čtverec)", value: third }
+          - { name: caption, label: Popisek, widget: string, required: false }
+      - label: Proces (kroky)
+        name: process
+        widget: list
+        required: false
+        field: { name: step, label: Krok, widget: string }
+
+  # ---------------- KATEGORIE ----------------
+  - name: sluzby
+    label: Služby (filtr 1. řádek)
+    label_singular: Služba
+    folder: src/content/services
+    format: json
+    extension: json
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: name
+    sortable_fields: [order, name]
+    fields:
+      - { name: name, label: Název, widget: string }
+      - { name: order, label: Pořadí, widget: number, value_type: int, default: 100 }
+
+  - name: obory
+    label: Obory (filtr 2. řádek)
+    label_singular: Obor
+    folder: src/content/sectors
+    format: json
+    extension: json
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: name
+    sortable_fields: [order, name]
+    fields:
+      - { name: name, label: Název, widget: string }
+      - { name: order, label: Pořadí, widget: number, value_type: int, default: 100 }
+
+  # ---------------- NASTAVENÍ ----------------
+  - name: nastaveni
+    label: Nastavení webu
+    files:
+      - name: site
+        label: Texty, kontakty a chat
+        file: src/content/settings/site.json
+        format: json
+        fields:
+          - { name: siteTitle, label: Titulek webu (záložka prohlížeče), widget: string }
+          - { name: description, label: Popis pro Google, widget: text }
+          - { name: wordmark, label: Logo – tučná část, widget: string }
+          - { name: wordmarkSuffix, label: Logo – tenká část, widget: string }
+          - { name: heading, label: Hlavní nadpis, widget: string }
+          - { name: placeholder, label: Text v poli chatu, widget: string }
+          - { name: email, label: E-mail, widget: string }
+          - { name: kompletLabel, label: Popisek pro Komplet, widget: string, default: Komplet }
+          - { name: instagram, label: Instagram URL, widget: string, required: false }
+          - { name: linkedin, label: LinkedIn URL, widget: string, required: false }
+          - { name: footerText, label: Text v patičce, widget: string }
+          - { name: emptyText, label: Text když filtr nic nenajde, widget: string }
+          - label: Speciální karty v pásu
+            name: specialCards
+            widget: list
+            summary: "{{title}}"
+            fields:
+              - { name: title, label: Nadpis, widget: string }
+              - { name: text, label: Text, widget: text }
+              - { name: tag, label: Štítek, widget: string }
+              - { name: link, label: Odkaz (https://… nebo mailto:…), widget: string }
+              - { name: line1, label: Popisek nad kartou – 1. řádek, widget: string }
+              - { name: line2, label: Popisek nad kartou – 2. řádek, widget: string }
+              - { name: position, label: Pozice v pásu (0 = první), widget: number, value_type: int }
+          - label: Chat
+            name: chat
+            widget: object
+            fields:
+              - { name: categoryReply, label: "Odpověď když zmíní kategorii ({kategorie} = název)", widget: string }
+              - { name: fallback, label: Odpověď když nic nesedí, widget: string }
+              - label: Odpovědi
+                name: answers
+                widget: list
+                summary: "{{keywords}}"
+                fields:
+                  - { name: keywords, label: Klíčová slova (oddělená čárkou), widget: string }
+                  - { name: answer, label: Odpověď, widget: text }

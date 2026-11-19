@@ -1,0 +1,39 @@
+{
+  "title": "BONSTAND",
+  "order": 90,
+  "published": true,
+  "tag": "",
+  "komplet": false,
+  "services": [
+    "Obsah"
+  ],
+  "sectors": [
+    "Retail"
+  ],
+  "card": {
+    "bg": "#f04a00",
+    "ink": "#fff",
+    "accent": "#111",
+    "eyebrow": "Instagram systém",
+    "bigText": "BON\nSTAND",
+    "cover": ""
+  },
+  "question": "Jak držet feed konzistentní rok?",
+  "answer": "Šablony s charakterem.",
+  "lede": "Brandový systém pro Instagram značky BONSTAND.",
+  "role": "IG brand systém",
+  "heroMedia": "",
+  "stats": [],
+  "quote": {
+    "title": "Šablony s charakterem.",
+    "text": ""
+  },
+  "process": [
+    "Rešerše a výzkum",
+    "Koncepty a skici",
+    "Výběr směru s klientem",
+    "Finalizace a systém",
+    "Aplikace a mockupy"
+  ],
+  "gallery": []
+}

@@ -1,0 +1,40 @@
+{
+  "title": "MFK Karviná",
+  "order": 10,
+  "published": true,
+  "tag": "Nová práce",
+  "komplet": false,
+  "services": [
+    "Identita",
+    "Rebrand"
+  ],
+  "sectors": [
+    "Sport"
+  ],
+  "card": {
+    "bg": "#0b4d2c",
+    "ink": "#f2e9c9",
+    "accent": "#f2c230",
+    "eyebrow": "Klubový znak",
+    "bigText": "MFK\nKAR\nVINÁ",
+    "cover": ""
+  },
+  "question": "Jak dát klubu znak, který nese celé město?",
+  "answer": "Orel, list a nový začátek.",
+  "lede": "Nový znak fotbalového klubu postavený na prvcích z městského erbu — orel a list, překreslené do moderní, čitelné značky.",
+  "role": "Znak, vektorizace, varianty, mockupy",
+  "heroMedia": "",
+  "stats": [],
+  "quote": {
+    "title": "Orel, list a nový začátek.",
+    "text": ""
+  },
+  "process": [
+    "Rešerše a výzkum",
+    "Koncepty a skici",
+    "Výběr směru s klientem",
+    "Finalizace a systém",
+    "Aplikace a mockupy"
+  ],
+  "gallery": []
+}

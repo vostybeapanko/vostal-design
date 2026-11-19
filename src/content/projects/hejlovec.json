@@ -1,0 +1,40 @@
+{
+  "title": "Hejlovec",
+  "order": 100,
+  "published": true,
+  "tag": "",
+  "komplet": false,
+  "services": [
+    "Web",
+    "Merch"
+  ],
+  "sectors": [
+    "Tvůrci"
+  ],
+  "card": {
+    "bg": "#101010",
+    "ink": "#ff3d3d",
+    "accent": "#ff3d3d",
+    "eyebrow": "Merch store",
+    "bigText": "HEJ\nLO\nVEC",
+    "cover": ""
+  },
+  "question": "Jak má vypadat merch obchod tvůrce?",
+  "answer": "Rychle, hlasitě, jednoduše.",
+  "lede": "Prototyp merch e-shopu Hejlovec — od HTML v1 po React aplikaci v3.",
+  "role": "E-shop, UI, vývoj",
+  "heroMedia": "",
+  "stats": [],
+  "quote": {
+    "title": "Rychle, hlasitě, jednoduše.",
+    "text": ""
+  },
+  "process": [
+    "Rešerše a výzkum",
+    "Koncepty a skici",
+    "Výběr směru s klientem",
+    "Finalizace a systém",
+    "Aplikace a mockupy"
+  ],
+  "gallery": []
+}

@@ -1,0 +1,25 @@
+---
+import { site, url } from '../lib/data.js';
+import '../styles/global.css';
+const { title = site.siteTitle, description = site.description, isCase = false } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <link rel="icon" href={url('/favicon.svg')} type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;700;900&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body class={isCase ? 'is-case' : 'is-home'}>
+  <a class="mark" href={url('/')} aria-label={`${site.wordmark}${site.wordmarkSuffix} — domů`}>{site.wordmark}<span>{site.wordmarkSuffix}</span></a>
+  {isCase && <a class="back" href={url('/')} aria-label="Zpět na úvod">←</a>}
+  <slot />
+</body>
+</html>

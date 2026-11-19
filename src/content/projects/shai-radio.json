@@ -1,0 +1,40 @@
+{
+  "title": "SHAI radio",
+  "order": 50,
+  "published": true,
+  "tag": "",
+  "komplet": false,
+  "services": [
+    "Web",
+    "Merch"
+  ],
+  "sectors": [
+    "Hudba"
+  ],
+  "card": {
+    "bg": "#c9c2ff",
+    "ink": "#16113a",
+    "accent": "#16113a",
+    "eyebrow": "Web player + merch",
+    "bigText": "SHAI\nFM",
+    "cover": ""
+  },
+  "question": "Jak zní Y2K na webu?",
+  "answer": "Stiskni play.",
+  "lede": "Webový přehrávač a merch pro stanici SHAI radio — Y2K a 90s rap estetika, pořady THE SHAI SHOW a ON THE SIGNAL.",
+  "role": "Web player, merch",
+  "heroMedia": "",
+  "stats": [],
+  "quote": {
+    "title": "Stiskni play.",
+    "text": ""
+  },
+  "process": [
+    "Rešerše a výzkum",
+    "Koncepty a skici",
+    "Výběr směru s klientem",
+    "Finalizace a systém",
+    "Aplikace a mockupy"
+  ],
+  "gallery": []
+}

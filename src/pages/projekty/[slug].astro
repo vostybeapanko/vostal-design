@@ -1,0 +1,74 @@
+---
+import Base from '../../layouts/Base.astro';
+import { site, projects, url } from '../../lib/data.js';
+
+export function getStaticPaths() {
+  return projects.map((p, i) => ({ params: { slug: p.slug }, props: { p, next: projects[(i + 1) % projects.length] } }));
+}
+const { p, next } = Astro.props;
+const c = p.card || {};
+const isVideo = (s = '') => /\.(mp4|webm|mov)$/i.test(s);
+const media = (src, alt) => src
+  ? (isVideo(src) ? `<video src="${url(src)}" autoplay muted loop playsinline></video>` : `<img src="${url(src)}" alt="${alt}" loading="lazy">`)
+  : '';
+const gallery = (p.gallery && p.gallery.length) ? p.gallery : [
+  { size: 'half', image: '' }, { size: 'half', image: '' }, { size: 'full', image: '' },
+  { size: 'third', image: '' }, { size: 'third', image: '' }, { size: 'third', image: '' },
+];
+const style = `--c-bg:${c.bg};--c-ink:${c.ink};--c-acc:${c.accent || c.ink};--n-bg:${next.card.bg};--n-ink:${next.card.ink}`;
+---
+<Base title={`${p.title} — ${site.wordmark}${site.wordmarkSuffix}`} description={p.lede} isCase>
+  <article style={style}>
+    <section class="c-hero">
+      {p.heroLogo
+        ? <img src={url(p.heroLogo)} alt={p.title} />
+        : <h1 class="logo">{p.title}<small>{c.eyebrow}</small></h1>}
+    </section>
+
+    <div class="slot c-full" set:html={media(p.heroMedia, p.title) || 'Hero fotka / video'} />
+
+    {(p.question || p.answer) && (
+      <section class="c-q"><p>{p.question}</p><h2>{p.answer}</h2></section>
+    )}
+
+    <div class="wrap">
+      <section class="c-intro">
+        <div>
+          <div class="lab">Projekt</div>
+          <dl>
+            <dt>Klient</dt><dd>{p.title}</dd>
+            <dt>Služba</dt><dd>{p.label}</dd>
+            <dt>Obor</dt><dd>{p.sectors.join(', ')}</dd>
+            {p.role && <><dt>Role</dt><dd>{p.role}</dd></>}
+            {p.link && <><dt>Odkaz</dt><dd><a href={p.link}>{p.link.replace(/^https?:\/\//, '').replace(/\/$/, '')}</a></dd></>}
+          </dl>
+        </div>
+        <p class="lede">{p.lede}</p>
+      </section>
+
+      {p.stats && p.stats.length > 0 && (
+        <ul class="stats">{p.stats.map(s => <li><b>{s.value}</b><span>{s.label}</span></li>)}</ul>
+      )}
+
+      {p.quote?.title && (
+        <section class="quote"><p class="qt">{p.quote.title}</p>{p.quote.text && <p class="qx">{p.quote.text}</p>}</section>
+      )}
+
+      <section class="gallery">
+        {gallery.map(g => (
+          <figure class={g.size || 'half'}>
+            <div class="slot" style="height:100%" set:html={media(g.image, g.caption || p.title) || 'Obrázek'} />
+            {g.caption && <figcaption>{g.caption}</figcaption>}
+          </figure>
+        ))}
+      </section>
+
+      {p.process && p.process.length > 0 && (
+        <section class="process"><h3>Proces.</h3><ol>{p.process.map(s => <li>{s}</li>)}</ol></section>
+      )}
+    </div>
+
+    <a class="next" href={url(`/projekty/${next.slug}/`)}><small>Další projekt</small><div>{next.title}</div></a>
+    <footer class="c-foot"><span>{site.footerText}</span><a href={`mailto:${site.email}`}>{site.email}</a></footer>
+  </article>
+</Base>

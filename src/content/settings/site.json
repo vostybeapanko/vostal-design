@@ -1,0 +1,60 @@
+{
+  "siteTitle": "Jakub Vostal — vostal.design",
+  "description": "Jakub Vostal — grafický designér z Brna. Identity, merch, weby a obsah.",
+  "wordmark": "vostal",
+  "wordmarkSuffix": ".design",
+  "heading": "Zeptej se na cokoli.",
+  "placeholder": "Klidně i náhodnou myšlenku.",
+  "email": "ahoj@vostal.design",
+  "kompletLabel": "Komplet",
+  "instagram": "https://www.instagram.com/vostal.design/",
+  "linkedin": "https://www.linkedin.com/",
+  "footerText": "© 2026 Jakub Vostal · Brno",
+  "emptyText": "Tahle kombinace tu zatím není. Možná budeš první —",
+  "specialCards": [
+    {
+      "title": "Proces.",
+      "text": "Rebrandy, které nikdo neobjednal. Videosérie od ledna 2027.",
+      "tag": "Sledovat",
+      "link": "https://www.instagram.com/vostal.design/",
+      "line1": "Série",
+      "line2": "Instagram",
+      "position": 6
+    },
+    {
+      "title": "Spolupráce.",
+      "text": "Máš značku, která potřebuje odvahu? Napiš mi.",
+      "tag": "Napsat",
+      "link": "mailto:ahoj@vostal.design",
+      "line1": "Spolupráce",
+      "line2": "Kontakt",
+      "position": 99
+    }
+  ],
+  "chat": {
+    "categoryReply": "Jasně — tady je, co mám v kategorii {kategorie}. Mrkni do pásu ↓",
+    "fallback": "Dobrá myšlenka. Na tohle ti radši odpovím osobně — pošli mi ji mailem.",
+    "answers": [
+      {
+        "keywords": "cen, kolik, stoj, rozpoč, budget, nabíd",
+        "answer": "Každá zakázka je jiná. Pošli mi pár vět o projektu na ahoj@vostal.design a do dvou dnů máš odhad."
+      },
+      {
+        "keywords": "kdo, jsi, o tobě, vostal, jakub",
+        "answer": "Jakub Vostal, grafický designér z Brna. Identity, merch, weby a obsah. Kreslím od čtrnácti."
+      },
+      {
+        "keywords": "kdy, termín, volno, kapacit",
+        "answer": "Nové projekty beru průběžně. Napiš, kdy to potřebuješ, a domluvíme se."
+      },
+      {
+        "keywords": "kontakt, mail, napsat, spoj",
+        "answer": "ahoj@vostal.design · Instagram @vostal.design"
+      },
+      {
+        "keywords": "ahoj, čau, zdravím, hello",
+        "answer": "Ahoj! Na co se chceš zeptat?"
+      }
+    ]
+  }
+}

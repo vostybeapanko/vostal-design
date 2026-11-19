@@ -1,0 +1,39 @@
+{
+  "title": "ALUX",
+  "order": 80,
+  "published": true,
+  "tag": "",
+  "komplet": false,
+  "services": [
+    "Obsah"
+  ],
+  "sectors": [
+    "Výroba"
+  ],
+  "card": {
+    "bg": "#2f3a40",
+    "ink": "#e9edf0",
+    "accent": "#9fd3ff",
+    "eyebrow": "Hliníkové pergoly",
+    "bigText": "ALUX",
+    "cover": ""
+  },
+  "question": "Jak udělat pergolu, na kterou se chce scrollovat?",
+  "answer": "Systém, ne jednotlivé posty.",
+  "lede": "Instagramový obsahový systém a pipeline AI vizuálů pro výrobce hliníkových pergol ALUX.",
+  "role": "Content systém, vizuály",
+  "heroMedia": "",
+  "stats": [],
+  "quote": {
+    "title": "Systém, ne jednotlivé posty.",
+    "text": ""
+  },
+  "process": [
+    "Rešerše a výzkum",
+    "Koncepty a skici",
+    "Výběr směru s klientem",
+    "Finalizace a systém",
+    "Aplikace a mockupy"
+  ],
+  "gallery": []
+}

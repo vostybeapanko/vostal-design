@@ -1,0 +1,39 @@
+{
+  "title": "Būcheck & Pickle",
+  "order": 120,
+  "published": true,
+  "tag": "",
+  "komplet": false,
+  "services": [
+    "Merch"
+  ],
+  "sectors": [
+    "Gastro"
+  ],
+  "card": {
+    "bg": "#a7c957",
+    "ink": "#1f2a10",
+    "accent": "#6a040f",
+    "eyebrow": "Street food merch",
+    "bigText": "BŪ\nCHECK",
+    "cover": ""
+  },
+  "question": "Jak obléknout burgrárnu?",
+  "answer": "Merch, který chceš i bez hladu.",
+  "lede": "Merch mockupy pro brněnský street food Būcheck & Pickle.",
+  "role": "Merch, mockupy",
+  "heroMedia": "",
+  "stats": [],
+  "quote": {
+    "title": "Merch, který chceš i bez hladu.",
+    "text": ""
+  },
+  "process": [
+    "Rešerše a výzkum",
+    "Koncepty a skici",
+    "Výběr směru s klientem",
+    "Finalizace a systém",
+    "Aplikace a mockupy"
+  ],
+  "gallery": []
+}

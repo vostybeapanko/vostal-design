@@ -1,0 +1,40 @@
+{
+  "title": "ADAM TRAN",
+  "order": 40,
+  "published": true,
+  "tag": "Venku",
+  "komplet": false,
+  "services": [
+    "Identita",
+    "Merch"
+  ],
+  "sectors": [
+    "Móda"
+  ],
+  "card": {
+    "bg": "#ff2e63",
+    "ink": "#fff",
+    "accent": "#111",
+    "eyebrow": "iLOVE kolekce",
+    "bigText": "i♥\nLOVE",
+    "cover": ""
+  },
+  "question": "Jak se zamilovat do trička?",
+  "answer": "iLOVE. Bez vysvětlování.",
+  "lede": "Logo merch značky ADAM TRAN a produktové fotky kolekce iLOVE.",
+  "role": "Logo, produktové fotky",
+  "heroMedia": "",
+  "stats": [],
+  "quote": {
+    "title": "iLOVE. Bez vysvětlování.",
+    "text": ""
+  },
+  "process": [
+    "Rešerše a výzkum",
+    "Koncepty a skici",
+    "Výběr směru s klientem",
+    "Finalizace a systém",
+    "Aplikace a mockupy"
+  ],
+  "gallery": []
+}

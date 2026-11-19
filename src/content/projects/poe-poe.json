@@ -1,0 +1,41 @@
+{
+  "title": "Poe Poe",
+  "order": 70,
+  "published": true,
+  "tag": "",
+  "komplet": false,
+  "services": [
+    "Kampaň",
+    "Obsah",
+    "Web"
+  ],
+  "sectors": [
+    "Gastro"
+  ],
+  "card": {
+    "bg": "#ffcf3a",
+    "ink": "#1b1b1b",
+    "accent": "#e8452c",
+    "eyebrow": "Restaurace · Brno",
+    "bigText": "POE\nPOE",
+    "cover": ""
+  },
+  "question": "Jak přimět lidi hrát si s restaurací?",
+  "answer": "Nakrmme Poe Poe.",
+  "lede": "Brandová prohlížečová hra, obsahový kalendář a PR strategie pro brněnskou restauraci Poe Poe.",
+  "role": "Hra, obsah, PR",
+  "heroMedia": "",
+  "stats": [],
+  "quote": {
+    "title": "Nakrmme Poe Poe.",
+    "text": ""
+  },
+  "process": [
+    "Rešerše a výzkum",
+    "Koncepty a skici",
+    "Výběr směru s klientem",
+    "Finalizace a systém",
+    "Aplikace a mockupy"
+  ],
+  "gallery": []
+}

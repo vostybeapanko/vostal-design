@@ -1,0 +1,39 @@
+{
+  "title": "LUKOM",
+  "order": 30,
+  "published": true,
+  "tag": "Drop",
+  "komplet": false,
+  "services": [
+    "Merch"
+  ],
+  "sectors": [
+    "Móda"
+  ],
+  "card": {
+    "bg": "#1d2bff",
+    "ink": "#fff",
+    "accent": "#ffe14a",
+    "eyebrow": "Stars Drop",
+    "bigText": "LU\nKOM",
+    "cover": ""
+  },
+  "question": "Jak prodat kolekci dřív, než existuje?",
+  "answer": "Fotky, které vypadají jako focené.",
+  "lede": "Produktové mockupy pro kolekci LUKOM STARS DROP — fotorealistické vizuály pro launch.",
+  "role": "Produktové vizuály, mockupy",
+  "heroMedia": "",
+  "stats": [],
+  "quote": {
+    "title": "Fotky, které vypadají jako focené.",
+    "text": ""
+  },
+  "process": [
+    "Rešerše a výzkum",
+    "Koncepty a skici",
+    "Výběr směru s klientem",
+    "Finalizace a systém",
+    "Aplikace a mockupy"
+  ],
+  "gallery": []
+}

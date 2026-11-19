@@ -1,0 +1,41 @@
+{
+  "title": "MAZE Digital",
+  "order": 20,
+  "published": true,
+  "tag": "Nová práce",
+  "komplet": false,
+  "services": [
+    "Identita",
+    "Web",
+    "Obsah"
+  ],
+  "sectors": [
+    "Studio"
+  ],
+  "card": {
+    "bg": "#111",
+    "ink": "#f6f6f4",
+    "accent": "#c8ff3c",
+    "eyebrow": "Identita studia",
+    "bigText": "MAZE",
+    "cover": ""
+  },
+  "question": "Jak vypadá studio, které točí, fotí i kreslí?",
+  "answer": "Jedna značka, devět řemesel.",
+  "lede": "Vizuální identita brněnského kreativního studia MAZE — logo a systém pro video, foto i grafiku.",
+  "role": "Logo, identita, systém",
+  "heroMedia": "",
+  "stats": [],
+  "quote": {
+    "title": "Jedna značka, devět řemesel.",
+    "text": ""
+  },
+  "process": [
+    "Rešerše a výzkum",
+    "Koncepty a skici",
+    "Výběr směru s klientem",
+    "Finalizace a systém",
+    "Aplikace a mockupy"
+  ],
+  "gallery": []
+}

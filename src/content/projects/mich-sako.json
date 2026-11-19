@@ -1,0 +1,42 @@
+{
+  "title": "Mich Sako FC",
+  "order": 110,
+  "published": true,
+  "tag": "",
+  "komplet": false,
+  "services": [
+    "Identita",
+    "Rebrand",
+    "Merch"
+  ],
+  "sectors": [
+    "Sport",
+    "Tvůrci"
+  ],
+  "card": {
+    "bg": "#00a6a6",
+    "ink": "#fff",
+    "accent": "#0a2540",
+    "eyebrow": "Dres & identita",
+    "bigText": "MS\nFC",
+    "cover": ""
+  },
+  "question": "Jak má vypadat klub, který existuje jen na YouTube?",
+  "answer": "Jako skutečný.",
+  "lede": "Redesign dresu a identity virtuálního fotbalového klubu českého youtubera.",
+  "role": "Dres, identita",
+  "heroMedia": "",
+  "stats": [],
+  "quote": {
+    "title": "Jako skutečný.",
+    "text": ""
+  },
+  "process": [
+    "Rešerše a výzkum",
+    "Koncepty a skici",
+    "Výběr směru s klientem",
+    "Finalizace a systém",
+    "Aplikace a mockupy"
+  ],
+  "gallery": []
+}

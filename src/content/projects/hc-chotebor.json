@@ -1,0 +1,40 @@
+{
+  "title": "HC Chotěboř",
+  "order": 60,
+  "published": true,
+  "tag": "",
+  "komplet": false,
+  "services": [
+    "Identita",
+    "Rebrand"
+  ],
+  "sectors": [
+    "Sport"
+  ],
+  "card": {
+    "bg": "#e8e3d6",
+    "ink": "#7a0f14",
+    "accent": "#7a0f14",
+    "eyebrow": "Modernizace loga",
+    "bigText": "HC\nCHO\nTĚ\nBOŘ",
+    "cover": ""
+  },
+  "question": "Jak modernizovat erb, aniž by přestal být erbem?",
+  "answer": "Heraldika pro led.",
+  "lede": "Modernizace loga hokejového klubu HC Chotěboř — výzkum heraldiky, koncepty a prezentace.",
+  "role": "Logo, výzkum, prezentace",
+  "heroMedia": "",
+  "stats": [],
+  "quote": {
+    "title": "Heraldika pro led.",
+    "text": ""
+  },
+  "process": [
+    "Rešerše a výzkum",
+    "Koncepty a skici",
+    "Výběr směru s klientem",
+    "Finalizace a systém",
+    "Aplikace a mockupy"
+  ],
+  "gallery": []
+}
