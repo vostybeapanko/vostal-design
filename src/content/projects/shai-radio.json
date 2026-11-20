@@ -1,32 +1,36 @@
 {
   "title": "SHAI radio",
-  "order": 50,
+  "order": 10,
   "published": true,
-  "tag": "",
-  "komplet": false,
+  "tag": "Od 2024",
+  "komplet": true,
   "services": [
-    "Web",
-    "Merch"
+    "Identita",
+    "Merch",
+    "Web"
   ],
   "sectors": [
     "Hudba"
   ],
   "card": {
-    "bg": "#c9c2ff",
-    "ink": "#16113a",
-    "accent": "#16113a",
-    "eyebrow": "Web player + merch",
-    "bigText": "SHAI\nFM",
-    "cover": ""
+    "bg": "#111111",
+    "ink": "#ffd400",
+    "accent": "#ff4fa3",
+    "eyebrow": "Relogo · identita · merch",
+    "bigText": "SHAI\nRADIO",
+    "cover": "/uploads/shai-radio/5jWelzOKxe.webp",
+    "hoverMedia": ""
   },
-  "question": "Jak zní Y2K na webu?",
-  "answer": "Stiskni play.",
-  "lede": "Webový přehrávač a merch pro stanici SHAI radio — Y2K a 90s rap estetika, pořady THE SHAI SHOW a ON THE SIGNAL.",
-  "role": "Web player, merch",
-  "heroMedia": "",
+  "heroLogo": "",
+  "heroMedia": "/uploads/shai-radio/tCyDMrEmZJ.webp",
+  "question": "Jak udělat rádio, které si chceš obléct?",
+  "answer": "Merch, ze kterého je fanklub.",
+  "lede": "Spolupráce od července 2024. Nové logo, celá identita a merch pro rádio postavené na Y2K a 90s rapu, včetně pořadů THE SHAI SHOW a ON THE SIGNAL.",
+  "role": "Relogo, identita, merch, webový přehrávač",
+  "link": "",
   "stats": [],
   "quote": {
-    "title": "Stiskni play.",
+    "title": "Merch, ze kterého je fanklub.",
     "text": ""
   },
   "process": [
@@ -36,5 +40,41 @@
     "Finalizace a systém",
     "Aplikace a mockupy"
   ],
-  "gallery": []
+  "gallery": [
+    {
+      "image": "/uploads/shai-radio/gOeK5f3SXO.webp",
+      "size": "half"
+    },
+    {
+      "image": "/uploads/shai-radio/6AfwUsgiJO.webp",
+      "size": "half"
+    },
+    {
+      "image": "/uploads/shai-radio/JN8jxowOq4.webp",
+      "size": "third"
+    },
+    {
+      "image": "/uploads/shai-radio/SydkK0pUb8.webp",
+      "size": "third"
+    },
+    {
+      "image": "/uploads/shai-radio/u5RI8zMQLD.webp",
+      "size": "third"
+    },
+    {
+      "image": "/uploads/shai-radio/VXjANeIMMU.webp",
+      "size": "half"
+    },
+    {
+      "image": "/uploads/shai-radio/xSTFO8wjfW.webp",
+      "size": "half"
+    }
+  ],
+  "reel": [
+    "/uploads/shai-radio/gOeK5f3SXO.webp",
+    "/uploads/shai-radio/JN8jxowOq4.webp",
+    "/uploads/shai-radio/SydkK0pUb8.webp",
+    "/uploads/shai-radio/u5RI8zMQLD.webp",
+    "/uploads/shai-radio/VXjANeIMMU.webp"
+  ]
 }

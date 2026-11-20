@@ -1,6 +1,6 @@
 {
   "title": "BONSTAND",
-  "order": 90,
+  "order": 50,
   "published": true,
   "tag": "",
   "komplet": false,
@@ -8,24 +8,27 @@
     "Obsah"
   ],
   "sectors": [
-    "Retail"
+    "Reality"
   ],
   "card": {
-    "bg": "#f04a00",
-    "ink": "#fff",
-    "accent": "#111",
+    "bg": "#1d2b45",
+    "ink": "#f3e9dc",
+    "accent": "#c96f4a",
     "eyebrow": "Instagram systém",
     "bigText": "BON\nSTAND",
-    "cover": ""
+    "cover": "",
+    "hoverMedia": ""
   },
-  "question": "Jak držet feed konzistentní rok?",
-  "answer": "Šablony s charakterem.",
-  "lede": "Brandový systém pro Instagram značky BONSTAND.",
-  "role": "IG brand systém",
+  "heroLogo": "",
   "heroMedia": "",
+  "question": "Jak držet feed developera konzistentní půl roku?",
+  "answer": "Systém, ne jednotlivé posty.",
+  "lede": "Půlroční brand systém pro Instagram brněnského developera BONSTAND: typografie DRAPER a Montserrat, paleta navy, teal a terakota, šablony pro šest projektů. Realizováno přes Maze Digital.",
+  "role": "Instagram brand systém, šablony",
+  "link": "",
   "stats": [],
   "quote": {
-    "title": "Šablony s charakterem.",
+    "title": "Systém, ne jednotlivé posty.",
     "text": ""
   },
   "process": [
@@ -35,5 +38,6 @@
     "Finalizace a systém",
     "Aplikace a mockupy"
   ],
-  "gallery": []
+  "gallery": [],
+  "reel": []
 }

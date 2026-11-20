@@ -1,0 +1,44 @@
+{
+  "title": "Spolubydlím",
+  "order": 80,
+  "published": true,
+  "tag": "",
+  "komplet": false,
+  "services": [
+    "Identita",
+    "Logo"
+  ],
+  "sectors": [
+    "Bydlení"
+  ],
+  "card": {
+    "bg": "#f2e8d5",
+    "ink": "#2b2b2b",
+    "accent": "#2b2b2b",
+    "eyebrow": "Brand od nuly",
+    "bigText": "SPOLU\nBYDLÍM",
+    "cover": "",
+    "hoverMedia": ""
+  },
+  "heroLogo": "",
+  "heroMedia": "",
+  "question": "",
+  "answer": "",
+  "lede": "Značka Spolubydlím vytvořená od nuly.",
+  "role": "Identita, logo",
+  "link": "",
+  "stats": [],
+  "quote": {
+    "title": "",
+    "text": ""
+  },
+  "process": [
+    "Rešerše a výzkum",
+    "Koncepty a skici",
+    "Výběr směru s klientem",
+    "Finalizace a systém",
+    "Aplikace a mockupy"
+  ],
+  "gallery": [],
+  "reel": []
+}

@@ -1,0 +1,60 @@
+{
+  "title": "SunCone / Sun Snack",
+  "order": 120,
+  "published": true,
+  "tag": "Koncept",
+  "komplet": false,
+  "services": [
+    "Rebrand",
+    "Obaly"
+  ],
+  "sectors": [
+    "Potraviny"
+  ],
+  "card": {
+    "bg": "#e8e7e4",
+    "ink": "#1c1c1c",
+    "accent": "#1c1c1c",
+    "eyebrow": "Rebrand + obaly · koncept",
+    "bigText": "SUN\nCONE",
+    "cover": "/uploads/suncone/9ZFKIX8NYZ.webp",
+    "hoverMedia": ""
+  },
+  "heroLogo": "",
+  "heroMedia": "",
+  "question": "Jak má vypadat krabička, kterou chceš vystavit?",
+  "answer": "Méně barev, víc slunce.",
+  "lede": "Koncept rebrandu znojemského výrobce kornoutů a snacků: nové logo a kompletní obaly. Na snímcích je krabička Medio Becher.",
+  "role": "Rebrand, obalový design",
+  "link": "",
+  "stats": [],
+  "quote": {
+    "title": "Méně barev, víc slunce.",
+    "text": ""
+  },
+  "process": [
+    "Rešerše a výzkum",
+    "Koncepty a skici",
+    "Výběr směru s klientem",
+    "Finalizace a systém",
+    "Aplikace a mockupy"
+  ],
+  "gallery": [
+    {
+      "image": "/uploads/suncone/s78v0VNl8e.webp",
+      "size": "half"
+    },
+    {
+      "image": "/uploads/suncone/WDl7qxjcXe.webp",
+      "size": "half"
+    },
+    {
+      "image": "/uploads/suncone/cpgJbS60eP.webp",
+      "size": "full"
+    }
+  ],
+  "reel": [
+    "/uploads/suncone/s78v0VNl8e.webp",
+    "/uploads/suncone/cpgJbS60eP.webp"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "title": "Brněnská Buržoazie",
+  "order": 70,
+  "published": true,
+  "tag": "",
+  "komplet": false,
+  "services": [
+    "Rebrand",
+    "Obsah"
+  ],
+  "sectors": [
+    "Gastro"
+  ],
+  "card": {
+    "bg": "#1a1a1a",
+    "ink": "#e6c88a",
+    "accent": "#e6c88a",
+    "eyebrow": "Rebrand",
+    "bigText": "BRNĚNSKÁ\nBURŽOAZIE",
+    "cover": "",
+    "hoverMedia": ""
+  },
+  "heroLogo": "",
+  "heroMedia": "",
+  "question": "",
+  "answer": "",
+  "lede": "Rebrand Brněnské Buržoazie a grafika pro sociální sítě: carousely na Instagram a newslettery.",
+  "role": "Rebrand, IG carousely, newslettery",
+  "link": "",
+  "stats": [],
+  "quote": {
+    "title": "",
+    "text": ""
+  },
+  "process": [
+    "Rešerše a výzkum",
+    "Koncepty a skici",
+    "Výběr směru s klientem",
+    "Finalizace a systém",
+    "Aplikace a mockupy"
+  ],
+  "gallery": [],
+  "reel": []
+}

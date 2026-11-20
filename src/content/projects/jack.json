@@ -1,0 +1,44 @@
+{
+  "title": "Jack",
+  "order": 40,
+  "published": true,
+  "tag": "",
+  "komplet": true,
+  "services": [
+    "Identita",
+    "Logo"
+  ],
+  "sectors": [
+    "Sport"
+  ],
+  "card": {
+    "bg": "#0b1e3d",
+    "ink": "#e8eef7",
+    "accent": "#c8102e",
+    "eyebrow": "Identita od nuly",
+    "bigText": "JACK",
+    "cover": "",
+    "hoverMedia": ""
+  },
+  "heroLogo": "",
+  "heroMedia": "",
+  "question": "Jak má vypadat značka, která voní ledem?",
+  "answer": "Jack.",
+  "lede": "Kompletní identita od nuly: značka ve stylu ledního hokeje jménem Jack.",
+  "role": "Identita, logo, brand systém",
+  "link": "",
+  "stats": [],
+  "quote": {
+    "title": "Jack.",
+    "text": ""
+  },
+  "process": [
+    "Rešerše a výzkum",
+    "Koncepty a skici",
+    "Výběr směru s klientem",
+    "Finalizace a systém",
+    "Aplikace a mockupy"
+  ],
+  "gallery": [],
+  "reel": []
+}

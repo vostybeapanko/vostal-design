@@ -1,32 +1,35 @@
 {
   "title": "MFK Karviná",
-  "order": 10,
+  "order": 110,
   "published": true,
-  "tag": "Nová práce",
+  "tag": "Koncept",
   "komplet": false,
   "services": [
-    "Identita",
-    "Rebrand"
+    "Rebrand",
+    "Logo"
   ],
   "sectors": [
     "Sport"
   ],
   "card": {
-    "bg": "#0b4d2c",
-    "ink": "#f2e9c9",
-    "accent": "#f2c230",
-    "eyebrow": "Klubový znak",
+    "bg": "#d6d6d6",
+    "ink": "#2f7d46",
+    "accent": "#1f5c33",
+    "eyebrow": "Nový znak · koncept",
     "bigText": "MFK\nKAR\nVINÁ",
-    "cover": ""
+    "cover": "/uploads/mfk-karvina/u52ttswQLD.webp",
+    "hoverMedia": ""
   },
-  "question": "Jak dát klubu znak, který nese celé město?",
-  "answer": "Orel, list a nový začátek.",
-  "lede": "Nový znak fotbalového klubu postavený na prvcích z městského erbu — orel a list, překreslené do moderní, čitelné značky.",
-  "role": "Znak, vektorizace, varianty, mockupy",
+  "heroLogo": "/uploads/mfk-karvina/P3vglDK42C.webp",
   "heroMedia": "",
+  "question": "Jak dát klubu znak, který nese celé město?",
+  "answer": "Orlice a list v jednom štítu.",
+  "lede": "Neoficiální koncept nového znaku fotbalového klubu. Orlice a lipový list z městského erbu jsem spojil do jednoho moderního štítu, vektorizovaného v zelené, černé a bílé, plus verze bez textu.",
+  "role": "Znak, vektorizace, varianty",
+  "link": "",
   "stats": [],
   "quote": {
-    "title": "Orel, list a nový začátek.",
+    "title": "Orlice a list v jednom štítu.",
     "text": ""
   },
   "process": [
@@ -36,5 +39,13 @@
     "Finalizace a systém",
     "Aplikace a mockupy"
   ],
-  "gallery": []
+  "gallery": [
+    {
+      "image": "/uploads/mfk-karvina/SyB1kWYUb8.webp",
+      "size": "full"
+    }
+  ],
+  "reel": [
+    "/uploads/mfk-karvina/P3vglDK42C.webp"
+  ]
 }

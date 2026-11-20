@@ -1,0 +1,41 @@
+{
+  "title": "Aspect",
+  "order": 30,
+  "published": true,
+  "tag": "",
+  "komplet": false,
+  "services": [
+    "Logo"
+  ],
+  "sectors": [],
+  "card": {
+    "bg": "#e9e9e4",
+    "ink": "#111111",
+    "accent": "#111111",
+    "eyebrow": "Logo",
+    "bigText": "ASPECT",
+    "cover": "",
+    "hoverMedia": ""
+  },
+  "heroLogo": "",
+  "heroMedia": "",
+  "question": "",
+  "answer": "",
+  "lede": "Návrh loga pro značku Aspect.",
+  "role": "Logo",
+  "link": "",
+  "stats": [],
+  "quote": {
+    "title": "",
+    "text": ""
+  },
+  "process": [
+    "Rešerše a výzkum",
+    "Koncepty a skici",
+    "Výběr směru s klientem",
+    "Finalizace a systém",
+    "Aplikace a mockupy"
+  ],
+  "gallery": [],
+  "reel": []
+}

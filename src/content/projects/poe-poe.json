@@ -1,11 +1,10 @@
 {
   "title": "Poe Poe",
-  "order": 70,
+  "order": 90,
   "published": true,
   "tag": "",
   "komplet": false,
   "services": [
-    "Kampaň",
     "Obsah",
     "Web"
   ],
@@ -16,15 +15,18 @@
     "bg": "#ffcf3a",
     "ink": "#1b1b1b",
     "accent": "#e8452c",
-    "eyebrow": "Restaurace · Brno",
+    "eyebrow": "Instagram · Brno",
     "bigText": "POE\nPOE",
-    "cover": ""
+    "cover": "",
+    "hoverMedia": ""
   },
+  "heroLogo": "",
+  "heroMedia": "",
   "question": "Jak přimět lidi hrát si s restaurací?",
   "answer": "Nakrmme Poe Poe.",
-  "lede": "Brandová prohlížečová hra, obsahový kalendář a PR strategie pro brněnskou restauraci Poe Poe.",
-  "role": "Hra, obsah, PR",
-  "heroMedia": "",
+  "lede": "Instagram pro brněnskou restauraci Poe Poe: obsahový kalendář Reels a carouselů. K tomu brandová prohlížečová hra Nakrmme Poe Poe s vývojem postavičky a žebříčkem.",
+  "role": "Instagram, obsahový kalendář, hra",
+  "link": "",
   "stats": [],
   "quote": {
     "title": "Nakrmme Poe Poe.",
@@ -37,5 +39,6 @@
     "Finalizace a systém",
     "Aplikace a mockupy"
   ],
-  "gallery": []
+  "gallery": [],
+  "reel": []
 }

@@ -1,0 +1,45 @@
+{
+  "title": "Mandys",
+  "order": 100,
+  "published": true,
+  "tag": "",
+  "komplet": false,
+  "services": [
+    "Identita",
+    "Merch"
+  ],
+  "sectors": [
+    "Sport",
+    "Tvůrci"
+  ],
+  "card": {
+    "bg": "#0d0d0d",
+    "ink": "#CDFF00",
+    "accent": "#CDFF00",
+    "eyebrow": "Osobní brand · motokros",
+    "bigText": "MAN\nDYS",
+    "cover": "",
+    "hoverMedia": ""
+  },
+  "heroLogo": "",
+  "heroMedia": "",
+  "question": "Jak udělat merch jezdce, který nosí i lidi mimo trať?",
+  "answer": "Jméno místo čísla.",
+  "lede": "Osobní brand a merch drop pro motokrosového jezdce Daniela Mandyse (MX2, #20). Hlavním prvkem je wordmark MANDYS, číslo je jen doplněk kolekce. Volt žlutá je z jeho helmy.",
+  "role": "Brand, merch drop",
+  "link": "",
+  "stats": [],
+  "quote": {
+    "title": "Jméno místo čísla.",
+    "text": ""
+  },
+  "process": [
+    "Rešerše a výzkum",
+    "Koncepty a skici",
+    "Výběr směru s klientem",
+    "Finalizace a systém",
+    "Aplikace a mockupy"
+  ],
+  "gallery": [],
+  "reel": []
+}

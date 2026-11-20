@@ -5,29 +5,31 @@
   "tag": "Nová práce",
   "komplet": false,
   "services": [
-    "Identita",
-    "Web",
-    "Obsah"
+    "Rebrand",
+    "Identita"
   ],
   "sectors": [
     "Studio"
   ],
   "card": {
-    "bg": "#111",
-    "ink": "#f6f6f4",
-    "accent": "#c8ff3c",
-    "eyebrow": "Identita studia",
+    "bg": "#4D1821",
+    "ink": "#ffffff",
+    "accent": "#ffffff",
+    "eyebrow": "Rebrand studia",
     "bigText": "MAZE",
-    "cover": ""
+    "cover": "/uploads/maze/79BpGy5JAL.webp",
+    "hoverMedia": ""
   },
-  "question": "Jak vypadá studio, které točí, fotí i kreslí?",
-  "answer": "Jedna značka, devět řemesel.",
-  "lede": "Vizuální identita brněnského kreativního studia MAZE — logo a systém pro video, foto i grafiku.",
-  "role": "Logo, identita, systém",
-  "heroMedia": "",
+  "heroLogo": "",
+  "heroMedia": "/uploads/maze/9Zh80WDNYZ.webp",
+  "question": "Jak udělat rebrand studia, ve kterém sám pracuješ?",
+  "answer": "Nechat logo, změnit všechno kolem.",
+  "lede": "Grafikem v MAZE jsem od září 2025. V září 2026 jsem studiu navrhl rebrand: identitu postavenou na původním ručně psaném logu a symbolu M, s obří supergrafikou jako hlavním prvkem. Paleta je vínová, hodně černé a bílá jen jako akcent.",
+  "role": "Rebrand, identita, brand manuál",
+  "link": "",
   "stats": [],
   "quote": {
-    "title": "Jedna značka, devět řemesel.",
+    "title": "Nechat logo, změnit všechno kolem.",
     "text": ""
   },
   "process": [
@@ -37,5 +39,37 @@
     "Finalizace a systém",
     "Aplikace a mockupy"
   ],
-  "gallery": []
+  "gallery": [
+    {
+      "image": "/uploads/maze/KLn2Jmzkqp.webp",
+      "size": "half"
+    },
+    {
+      "image": "/uploads/maze/SyeVRGdUb8.webp",
+      "size": "half"
+    },
+    {
+      "image": "/uploads/maze/VXxKvnXMMU.webp",
+      "size": "full"
+    },
+    {
+      "image": "/uploads/maze/bxGRwnm5Y2.webp",
+      "size": "third"
+    },
+    {
+      "image": "/uploads/maze/p8srCaXehw.webp",
+      "size": "third"
+    },
+    {
+      "image": "/uploads/maze/yiIXnuCPW9.webp",
+      "size": "third"
+    }
+  ],
+  "reel": [
+    "/uploads/maze/KLn2Jmzkqp.webp",
+    "/uploads/maze/SyeVRGdUb8.webp",
+    "/uploads/maze/VXxKvnXMMU.webp",
+    "/uploads/maze/bxGRwnm5Y2.webp",
+    "/uploads/maze/p8srCaXehw.webp"
+  ]
 }

@@ -1,0 +1,43 @@
+{
+  "title": "Josefovský pivovar",
+  "order": 130,
+  "published": true,
+  "tag": "Koncept",
+  "komplet": false,
+  "services": [
+    "Rebrand"
+  ],
+  "sectors": [
+    "Nápoje"
+  ],
+  "card": {
+    "bg": "#2f3a2a",
+    "ink": "#e9dfc4",
+    "accent": "#c9a24a",
+    "eyebrow": "Rebrand · koncept",
+    "bigText": "JOSE\nFOV",
+    "cover": "",
+    "hoverMedia": ""
+  },
+  "heroLogo": "",
+  "heroMedia": "",
+  "question": "Jak uvařit značku z pevnosti?",
+  "answer": "Pevnost jako logo.",
+  "lede": "Rebrand pivovaru navázaného na Josefovskou pevnost: geometrické logo z bastionů a řada piv pojmenovaných podle vojenských hodností. Do top 3 výběrového řízení se nevešel.",
+  "role": "Rebrand, copywriting, mockupy",
+  "link": "",
+  "stats": [],
+  "quote": {
+    "title": "Pevnost jako logo.",
+    "text": ""
+  },
+  "process": [
+    "Rešerše a výzkum",
+    "Koncepty a skici",
+    "Výběr směru s klientem",
+    "Finalizace a systém",
+    "Aplikace a mockupy"
+  ],
+  "gallery": [],
+  "reel": []
+}

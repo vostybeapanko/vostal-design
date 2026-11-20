@@ -1,0 +1,66 @@
+{
+  "title": "Embligo",
+  "order": 60,
+  "published": true,
+  "tag": "",
+  "komplet": false,
+  "services": [
+    "Identita",
+    "Logo"
+  ],
+  "sectors": [
+    "Tvůrci"
+  ],
+  "card": {
+    "bg": "#011627",
+    "ink": "#F7F7F2",
+    "accent": "#FE3366",
+    "eyebrow": "Logo + brand",
+    "bigText": "em\nbligo",
+    "cover": "/uploads/embligo/KL2Aelnkqp.webp",
+    "hoverMedia": ""
+  },
+  "heroLogo": "",
+  "heroMedia": "/uploads/embligo/gOTVhWJSXO.webp",
+  "question": "Jak nakreslit merch dřív, než ho vyrobíš?",
+  "answer": "Logo jako tisková plocha.",
+  "lede": "Logo a brand pro Embligo, full-service merch pro tvůrce. Monogram „e“ v čárkovaném rámečku odkazuje na tiskovou plochu trička, růžová tečka nad i je podpis značky.",
+  "role": "Logo, brand, mockupy",
+  "link": "",
+  "stats": [],
+  "quote": {
+    "title": "Logo jako tisková plocha.",
+    "text": ""
+  },
+  "process": [
+    "Rešerše a výzkum",
+    "Koncepty a skici",
+    "Výběr směru s klientem",
+    "Finalizace a systém",
+    "Aplikace a mockupy"
+  ],
+  "gallery": [
+    {
+      "image": "/uploads/embligo/IfSUGlytvE.webp",
+      "size": "half"
+    },
+    {
+      "image": "/uploads/embligo/hu7JzIXvqL.webp",
+      "size": "half"
+    },
+    {
+      "image": "/uploads/embligo/LwWcv6ZswO.webp",
+      "size": "half"
+    },
+    {
+      "image": "/uploads/embligo/s7c0vBBl8e.webp",
+      "size": "half"
+    }
+  ],
+  "reel": [
+    "/uploads/embligo/IfSUGlytvE.webp",
+    "/uploads/embligo/LwWcv6ZswO.webp",
+    "/uploads/embligo/s7c0vBBl8e.webp",
+    "/uploads/embligo/hu7JzIXvqL.webp"
+  ]
+}
