@@ -3,7 +3,7 @@
 Portfolio Jakuba Vostala. Statický web v [Astro](https://astro.build), hostovaný na GitHub Pages, obsah se spravuje v administraci na `/admin`.
 
 ## Úpravy obsahu
-Jdi na **https://vostaldesign.run.place/admin/** → *Sign In with Token* → vlož GitHub token.
+Jdi na **https://vostybeapanko.github.io/vostal-design/admin/** → *Sign In with Token* → vlož GitHub token.
 Každé uložení = commit do `main` → web se za ~1 minutu sám znovu nasadí.
 
 Token: GitHub → Settings → Developer settings → Fine-grained tokens → *Generate new token* →

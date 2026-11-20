@@ -18,9 +18,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      # vlastní doména — při změně uprav i public/CNAME
-      SITE: https://vostaldesign.run.place
-      BASE: /
+      # až bude vlastní doména: SITE=https://domena, BASE=/ a přidej public/CNAME
+      SITE: https://vostybeapanko.github.io
+      BASE: /vostal-design
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
